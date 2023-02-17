@@ -1,0 +1,141 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+:root {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+    --lightWeight: 200;
+    --mediumWeight: 400;
+    --heavyWeight: 600;
+    color: #5368A6;
+    
+}
+nav {
+    position: sticky;
+    top: 0px;
+    background-color: #5368A6;
+}
+
+nav ul {
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    color: #5368A6;
+}
+nav a {
+    padding: .8rem .5rem;
+    display: block;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: var(--heavyWeight);
+}
+nav a:hover {
+    background-color: #C4D0F2;
+}
+section#about {
+    background-color: #f2f2f2;
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section#about h1 {
+font-size: 2.5rem;
+}
+section#about h2 {
+    font-size: 1.5rem;
+    color: #5368A6;
+    }
+    div.theParent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.theParent a {
+    flex-basis: 100%;
+    padding: 1rem 2vw;
+    
+}
+section#projects {
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    padding: 50px;
+    color: #5368A6;
+    text-decoration: none;
+}
+section#projects h2 {
+    color: #5368A6;
+}
+section#projects img {
+    width: 100%;
+}
+section#projects a {
+    text-decoration: none;
+    color: #5368A6;
+    text-align: center;
+}
+section#projects figure {
+    margin: 0;
+    width: 100%;
+    
+}
+
+section#contact {
+    background-color: #f2f2f2;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section#contact h2 {
+color: #5368A6;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+section#contact ul {
+display: flex;
+justify-content: space-around;
+list-style-type: none;
+padding: 0px;
+}
+section#contact li {
+  list-style-type: none;
+  text-align: center;
+}
+section#contact a {
+    color: #5368A6;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+section#contact a img {
+height: 50px;
+width: 100%;
+display: block;
+margin: 0px;
+padding: 0px;
+
+}
+section#contact a:hover {
+text-decoration: underline;
+transform: translateY(5px);
+}
+footer p {
+    font-size: 1rem;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 5px;
+    height: 4vh;
+    background-color: #5368A6;
+}
+/* test-dev.min.js sets p span to 150% font size */
+p span{
+    font-size: inherit;
+}

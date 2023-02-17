@@ -1,0 +1,36 @@
+@media only screen and (min-width: 60rem) {
+section#about h1 {
+    font-size: 5rem;
+        }
+section#about h2 {
+    font-size: 3rem;
+            
+        }
+section#projects h2{
+    font-size: 5rem;
+        }
+section#projects figure {
+    font-size: 1.3rem;
+        }
+section#contact h2 {
+    font-size: 5rem;
+}
+div.theParent a {
+    flex-basis: 33.3333333333333%;
+}
+section#contact a {
+    color: #5368A6;
+    
+    
+}
+section#contact a img {
+height: 150px;
+width: 100%;
+display: block;
+margin: 0px;
+padding: 0px;
+}
+section#contact a {
+    font-size: 1.3rem;
+}
+} /* end media query*/
